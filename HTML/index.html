@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="search-field">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="City" placeholder="enter a place" />
+        </div>
+        <button class="search-btn">
+          <i class="fa-solid fa-location-crosshairs"></i>
+        </button>
+      </div>
+      <div class="main-content">
+        <div class="current-weather">
+          <div class="icon-weather">
+            <img src="/icons/no-result.svg" />
+          </div>
+          <div class="degree">No Result</div>
+          <div class="weather-name">No Result</div>
+        </div>
+        <div class="other-infor-weather">
+          <div class="infor-field">
+            <p class="infor">Description:</p>
+            <p class="description">No Result</p>
+          </div>
+
+          <div class="infor-field">
+            <p class="infor">Humidity:</p>
+            <p class="description">No Result</p>
+          </div>
+
+          <div class="infor-field">
+            <p class="infor">Wind Speed:</p>
+            <p class="description">No Result</p>
+          </div>
+
+          <div class="infor-field">
+            <p class="infor">Clouds:</p>
+            <p class="description">No Result</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-container">
+      <div class="header-map">
+        <button class="back-btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="search-field-map">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="City-map" placeholder="enter a place" />
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+  <script src="/JS/script.js"></script>
+</html>
